@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css" </head>
+
+<body>
+    <div class="heading">
+        <h1 id="title">Application Form</h1>
+        <p class="description" id="description">Please fill out form below in order to apply for our program.</p>
+    </div>
+
+    <div class="form">
+        <form id="survey-form">
+
+            <fieldset>
+                <label id="name-label" for="id" class="question">Name </label><input required id="name" type="text"
+                    placeholder="Enter your name" /><br />
+                <label id="email-label" for="email" class="question">Email </label><input required id="email"
+                    type="email" placeholder="Enter your email" /><br />
+                <label id="number-label" for="number" class="question">Age
+                    <input id="number" type="number" min="1" max="100" placeholder="Choose your age" /> </label>
+                <label class="question" for="dropdown">Gender</label>
+                <select id="dropdown">
+                    <option id="dropdownone">Choose your gender</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend class="question">Which semester are you registering for?</legend>
+                <label><input checked type="radio" name="semester" value="fall" /> Fall</label>
+                <label><input type="radio" name="semester" value="fall" /> Spring</label>
+                <label><input type="radio" name="semester" value="fall" /> Summer</label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="question">What courses are you taking?</legend>
+                <label><input type="checkbox" value="cs100" /> CS100</label>
+                <label><input type="checkbox" value="cs221" /> CS221</label>
+                <label><input type="checkbox" value="cs350" /> CS350</label>
+                <label><input type="checkbox" value="math100" /> MATH100</label>
+                <label><input type="checkbox" value="math254" /> MATH254</label>
+                <label><input type="checkbox" value="math450" /> MATH450</label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="question">Why are you applying for this program?</legend>
+                <textarea></textarea>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" id="submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
